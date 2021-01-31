@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: cucumber.Options.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 17, Failures: 2, Errors: 0, Skipped: 1, Time elapsed: 20.551 sec <<< FAILURE!
+Then The API call is sucessful with status code 200(| fea5e225a0208cebfdfb0beaca174d53 |)  Time elapsed: 0.005 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<200> but was:<404>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at stepDefinitions.stepDefinitions.the_api_call_is_sucessful_with_status_code_200(stepDefinitions.java:83)
+	at ✽.Then The API call is sucessful with status code 200(placeValidations.feature:20)
+
+| fea5e225a0208cebfdfb0beaca174d53 |  Time elapsed: 0.005 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<200> but was:<404>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at stepDefinitions.stepDefinitions.the_api_call_is_sucessful_with_status_code_200(stepDefinitions.java:83)
+	at ✽.Then The API call is sucessful with status code 200(placeValidations.feature:20)
+

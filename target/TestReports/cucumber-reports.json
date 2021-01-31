@@ -1,0 +1,387 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 13,
+        "name": "Verify if a place can be added successfully using AddPlaceAPI",
+        "description": "",
+        "id": "validating-place-api;verify-if-a-place-can-be-added-successfully-using-addplaceapi;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1120430243,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Add Place Payload is available with \"Raffy\" \"Filipino\" \"Melbourne\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Raffy",
+                  "offset": 37
+                },
+                {
+                  "val": "Filipino",
+                  "offset": 45
+                },
+                {
+                  "val": "Melbourne",
+                  "offset": 56
+                }
+              ],
+              "location": "stepDefinitions.addPlacePayloadIsAvailableWith(String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2517708947,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User calls \"AddPlaceAPI\" with \"Post\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "AddPlaceAPI",
+                  "offset": 12
+                },
+                {
+                  "val": "Post",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinitions.userCallsWithHttpRequest(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1874701,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The API call is sucessful with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 43
+                }
+              ],
+              "location": "stepDefinitions.the_api_call_is_sucessful_with_status_code_200(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 585704485,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"status\" in response body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "status",
+                  "offset": 1
+                },
+                {
+                  "val": "OK",
+                  "offset": 30
+                }
+              ],
+              "location": "stepDefinitions.inResponseBodyIs(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3622222105,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "place_Id mapped to \"Raffy\" is captured to be used in \"GetPlaceAPI\" with \"Get\" request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Raffy",
+                  "offset": 20
+                },
+                {
+                  "val": "GetPlaceAPI",
+                  "offset": 54
+                },
+                {
+                  "val": "Get",
+                  "offset": 73
+                }
+              ],
+              "location": "stepDefinitions.place_idIsCapturesMappedToToBeUsedIn(String,String,String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@AddPlace"
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Verify if a place can be added successfully using AddPlaceAPI",
+        "description": "",
+        "id": "validating-place-api;verify-if-a-place-can-be-added-successfully-using-addplaceapi;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3078446,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Add Place Payload is available with \"Fat\" \"English\" \"South\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Fat",
+                  "offset": 37
+                },
+                {
+                  "val": "English",
+                  "offset": 43
+                },
+                {
+                  "val": "South",
+                  "offset": 53
+                }
+              ],
+              "location": "stepDefinitions.addPlacePayloadIsAvailableWith(String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1214967321,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User calls \"AddPlaceAPI\" with \"Post\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "AddPlaceAPI",
+                  "offset": 12
+                },
+                {
+                  "val": "Post",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinitions.userCallsWithHttpRequest(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 154407,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The API call is sucessful with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 43
+                }
+              ],
+              "location": "stepDefinitions.the_api_call_is_sucessful_with_status_code_200(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9531366,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"status\" in response body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "status",
+                  "offset": 1
+                },
+                {
+                  "val": "OK",
+                  "offset": 30
+                }
+              ],
+              "location": "stepDefinitions.inResponseBodyIs(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2762435302,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "place_Id mapped to \"Fat\" is captured to be used in \"GetPlaceAPI\" with \"Get\" request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Fat",
+                  "offset": 20
+                },
+                {
+                  "val": "GetPlaceAPI",
+                  "offset": 52
+                },
+                {
+                  "val": "Get",
+                  "offset": 71
+                }
+              ],
+              "location": "stepDefinitions.place_idIsCapturesMappedToToBeUsedIn(String,String,String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@AddPlace"
+          }
+        ]
+      },
+      {
+        "line": 25,
+        "name": "Verify if a place can be deleted successfully using DeletePlaceAPI",
+        "description": "",
+        "id": "validating-place-api;verify-if-a-place-can-be-deleted-successfully-using-deleteplaceapi;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3367972282,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Delete Place Payload is available for \"fea5e225a0208cebfdfb0beaca174d53\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "fea5e225a0208cebfdfb0beaca174d53",
+                  "offset": 39
+                }
+              ],
+              "location": "stepDefinitions.deletePlacePayloadIsAvailableFor(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3169559103,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User calls \"DeletePlaceAPI\" with \"Delete\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "DeletePlaceAPI",
+                  "offset": 12
+                },
+                {
+                  "val": "Delete",
+                  "offset": 34
+                }
+              ],
+              "location": "stepDefinitions.userCallsWithHttpRequest(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 804918,
+              "error_message": "java.lang.AssertionError: expected:\u003c200\u003e but was:\u003c404\u003e\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:647)\n\tat org.junit.Assert.assertEquals(Assert.java:633)\n\tat stepDefinitions.stepDefinitions.the_api_call_is_sucessful_with_status_code_200(stepDefinitions.java:83)\n\tat ✽.Then The API call is sucessful with status code 200(placeValidations.feature:20)\n",
+              "status": "failed"
+            },
+            "line": 20,
+            "name": "The API call is sucessful with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 43
+                }
+              ],
+              "location": "stepDefinitions.the_api_call_is_sucessful_with_status_code_200(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "\"status\" in response body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "status",
+                  "offset": 1
+                },
+                {
+                  "val": "OK",
+                  "offset": 30
+                }
+              ],
+              "location": "stepDefinitions.inResponseBodyIs(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 16,
+            "name": "@DeletePlace"
+          }
+        ]
+      }
+    ],
+    "name": "Validating Place API",
+    "description": "",
+    "id": "validating-place-api",
+    "keyword": "Feature",
+    "uri": "placeValidations.feature"
+  }
+]

@@ -1,0 +1,230 @@
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "location": {
+        "lat": 38.0,
+        "lng": -34.0
+    },
+    "accuracy": 100,
+    "name": "Raffy",
+    "phone_number": "04232323",
+    "address": "Melbourne",
+    "types": [
+        "shoe park",
+        "shop"
+    ],
+    "website": "www.py.com",
+    "language": "Filipino"
+}
+HTTP/1.1 200 OK
+Date: Wed, 06 Jan 2021 06:54:05 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 194
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK",
+    "place_id": "e2c02a51fd778006c05b28f8a5a098f3",
+    "scope": "APP",
+    "reference": "a3164cabfc601fbe158aa0418eb12692a3164cabfc601fbe158aa0418eb12692",
+    "id": "a3164cabfc601fbe158aa0418eb12692"
+}
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=e2c02a51fd778006c05b28f8a5a098f3
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+				place_id=e2c02a51fd778006c05b28f8a5a098f3
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 06 Jan 2021 06:54:07 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 198
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "location": {
+        "latitude": "38",
+        "longitude": "-34"
+    },
+    "accuracy": "100",
+    "name": "Raffy",
+    "phone_number": "04232323",
+    "address": "Melbourne",
+    "types": "shoe park,shop",
+    "website": "www.py.com",
+    "language": "Filipino"
+}
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "location": {
+        "lat": 38.0,
+        "lng": -34.0
+    },
+    "accuracy": 100,
+    "name": "Fat",
+    "phone_number": "04232323",
+    "address": "South",
+    "types": [
+        "shoe park",
+        "shop"
+    ],
+    "website": "www.py.com",
+    "language": "English"
+}
+HTTP/1.1 200 OK
+Date: Wed, 06 Jan 2021 06:54:10 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 194
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK",
+    "place_id": "418107c710b7f4e9f3a37e35f270a3ae",
+    "scope": "APP",
+    "reference": "63841c76804ede6b9834ec73dd91235263841c76804ede6b9834ec73dd912352",
+    "id": "63841c76804ede6b9834ec73dd912352"
+}
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=418107c710b7f4e9f3a37e35f270a3ae
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+				place_id=418107c710b7f4e9f3a37e35f270a3ae
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 06 Jan 2021 06:54:12 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 191
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "location": {
+        "latitude": "38",
+        "longitude": "-34"
+    },
+    "accuracy": "100",
+    "name": "Fat",
+    "phone_number": "04232323",
+    "address": "South",
+    "types": "shoe park,shop",
+    "website": "www.py.com",
+    "language": "English"
+}
+Request method:	DELETE
+Request URI:	https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "place_id": "fea5e225a0208cebfdfb0beaca174d53"
+}
+HTTP/1.1 404 Not Found
+Date: Wed, 06 Jan 2021 06:54:14 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 69
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "msg": "Delete operation failed, looks like the data doesn't exists"
+}
+Request method:	DELETE
+Request URI:	https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "place_id": "fea5e225a0208cebfdfb0beaca174d53"
+}
+HTTP/1.1 404 Not Found
+Date: Wed, 06 Jan 2021 06:54:17 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 69
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "msg": "Delete operation failed, looks like the data doesn't exists"
+}
