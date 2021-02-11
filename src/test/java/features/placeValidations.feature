@@ -13,6 +13,7 @@ Feature: Validating Place API
       | Raffy   | Filipino | Melbourne         |
       | Fat     | English   | South             |
 
+
   @DeletePlace
   Scenario Outline: Verify if a place can be deleted successfully using DeletePlaceAPI
     Given Delete Place Payload is available for "<placeId>"

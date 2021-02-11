@@ -24,6 +24,7 @@ import resources.utilities;
 
 import static io.restassured.RestAssured.given;
 
+// Tagged as RunWith so TestRunner will know which class to run
 @RunWith(Cucumber.class)
 public class stepDefinitions extends utilities {
 
@@ -32,23 +33,18 @@ public class stepDefinitions extends utilities {
     Response response;
     RequestSpecification res;
     //String r;
-    String status;
+    String statusJson;
     String place_Id;
 
-
+    // Create objects for the following classes to be able to access methods inside it
     utilities getJsonValue = new utilities();
-
-
-    // Create an object for testDataBuild class to be able to access it
     testDataBuild data = new testDataBuild();
 
-
+    // Getting the body of Json file ready
     @Given("^Add Place Payload is available with \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\"$")
-    public void addPlacePayloadIsAvailableWith(String arg0, String arg1, String arg2) throws Throwable {
-        RestAssured.baseURI="https://rahulshettyacademy.com";
-
-        res = given().log().all().spec(requestSpecificationBuild()).body(data.addPlacePayLoad(arg0,arg1, arg2));
-
+    public void addPlacePayloadIsAvailableWith(String name, String language, String address) throws Throwable {
+        //Storing the API request with the body in variable 'res'
+        res = given().log().all().spec(requestSpecificationBuild()).body(data.addPlacePayLoad(name,language, address));
 
     }
 
@@ -58,6 +54,7 @@ public class stepDefinitions extends utilities {
         // Constructor will be called with value of resource passed in this method.
         resourceAPI resources = resourceAPI.valueOf(resource);
 
+        // Construct the response
         resSpec = new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
 
         // This checks the request being passed in this method, calls that particular request from enum class to get the
@@ -68,6 +65,8 @@ public class stepDefinitions extends utilities {
             response = res.when().get(resources.getResource());
         else if (request.equalsIgnoreCase("Delete"))
             response = res.when().delete(resources.getResource());
+        else if (request.equalsIgnoreCase("PUT"))
+            response = res.when().put(resources.getResource());
 
         /*
         response = res.when().log().all().post(resources.getResource())
@@ -86,13 +85,13 @@ public class stepDefinitions extends utilities {
 
 
     @And("^\"([^\"]*)\" in response body is \"([^\"]*)\"$")
-    public void inResponseBodyIs(String arg0, String arg1) throws Throwable {
+    public void inResponseBodyIs(String status, String statusValue) throws Throwable {
 
         // Getting the value stored in "status" field from JSON generated
         // Verify the value of status field.
-        status = getJsonValue.getJsonPath(response,"status");
-        System.out.println(status);
-        assertEquals(status, arg1);
+        statusJson = getJsonValue.getJsonPath(response,status);
+        System.out.println(statusJson);
+        assertEquals(statusValue, statusJson);
 
 
 

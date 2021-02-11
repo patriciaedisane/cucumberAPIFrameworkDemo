@@ -5,6 +5,7 @@ import pojo.location;
 
 import java.util.ArrayList;
 import java.util.List;
+// Test Data generated via Getters and Setters
 
 public class testDataBuild {
     public addPlaceAPI addPlacePayLoad(String name, String language, String address) {
@@ -22,7 +23,7 @@ public class testDataBuild {
 
         p.setTypes(myList);
 
-
+        // Adding values into the fields under location list in the JSON
         location l = new location();
         l.setLng(-34);
         l.setLat(38);

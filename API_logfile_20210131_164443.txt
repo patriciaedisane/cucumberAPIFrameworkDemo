@@ -1,0 +1,170 @@
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "location": {
+        "lat": 38.0,
+        "lng": -34.0
+    },
+    "accuracy": 100,
+    "name": "Raffy",
+    "phone_number": "04232323",
+    "address": "Melbourne",
+    "types": [
+        "shoe park",
+        "shop"
+    ],
+    "website": "www.py.com",
+    "language": "Filipino"
+}
+HTTP/1.1 200 OK
+Date: Sun, 31 Jan 2021 05:44:46 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 194
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK",
+    "place_id": "0167d07f7fd3564f7b06cc9f4b5ef73f",
+    "scope": "APP",
+    "reference": "6b50c6b77b879b9beb0c669b551cea226b50c6b77b879b9beb0c669b551cea22",
+    "id": "6b50c6b77b879b9beb0c669b551cea22"
+}
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=0167d07f7fd3564f7b06cc9f4b5ef73f
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+				place_id=0167d07f7fd3564f7b06cc9f4b5ef73f
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Sun, 31 Jan 2021 05:44:48 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 198
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "location": {
+        "latitude": "38",
+        "longitude": "-34"
+    },
+    "accuracy": "100",
+    "name": "Raffy",
+    "phone_number": "04232323",
+    "address": "Melbourne",
+    "types": "shoe park,shop",
+    "website": "www.py.com",
+    "language": "Filipino"
+}
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "location": {
+        "lat": 38.0,
+        "lng": -34.0
+    },
+    "accuracy": 100,
+    "name": "Fat",
+    "phone_number": "04232323",
+    "address": "South",
+    "types": [
+        "shoe park",
+        "shop"
+    ],
+    "website": "www.py.com",
+    "language": "English"
+}
+HTTP/1.1 200 OK
+Date: Sun, 31 Jan 2021 05:44:50 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 194
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK",
+    "place_id": "860cdc8be31f2e7aacf82f9a175b83b2",
+    "scope": "APP",
+    "reference": "84a3c0ae9b70ecae6b389cdec55dbe1584a3c0ae9b70ecae6b389cdec55dbe15",
+    "id": "84a3c0ae9b70ecae6b389cdec55dbe15"
+}
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=860cdc8be31f2e7aacf82f9a175b83b2
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+				place_id=860cdc8be31f2e7aacf82f9a175b83b2
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Sun, 31 Jan 2021 05:44:51 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 191
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "location": {
+        "latitude": "38",
+        "longitude": "-34"
+    },
+    "accuracy": "100",
+    "name": "Fat",
+    "phone_number": "04232323",
+    "address": "South",
+    "types": "shoe park,shop",
+    "website": "www.py.com",
+    "language": "English"
+}
